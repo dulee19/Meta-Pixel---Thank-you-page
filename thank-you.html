@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Digistore24 Design - Thank you page" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, DigitalStore" />
+    <meta name="author" content="Dušan Aleksić" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script defer>
+      // Fake Facebook Pixel tracking code
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+
+      fbq("track", "Purchase", { value: 50.0, currency: "USD" });
+    </script>
+    <title>Thank You!</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Thank You for Your Purchase!</h1>
+        <p>
+          Your order has been successfully placed. You will receive a
+          confirmation email soon.
+        </p>
+        <p>
+          Need help?
+          <a href="mailto:helpdesk@digistore24.ie">helpdesk@digistore24.ie</a>
+        </p>
+
+        <!-- Tracking Pixel (Example for Meta Ads) -->
+        <img
+          src="https://example.com/pixel?id=12345"
+          width="1"
+          height="1"
+          style="display:none;"
+          alt="Tracking Pixel"
+        />
+      </section>
+    </main>
+  </body>
+</html>
